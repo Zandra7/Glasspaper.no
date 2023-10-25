@@ -1,7 +1,6 @@
 <template>
     <div>
-        <Navbar />
-        <SearchCard />
+        <h1>Navbar</h1>
     </div>
 </template>
 
