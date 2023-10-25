@@ -2,7 +2,7 @@
         <div class="kurs-sertif-bg flex flex-col">
             <div class="kurs-sertif-content mx-32 text-white">
                 <h1 class="text-4xl pt-10 pb-7">Kurs og sertifisering</h1>
-                <p class="mb-2.5">Vi har en rekke kurs og sertifiseringer, <label class="font-bold underline underline-offset-2">se full liste her</label></p>
+                <p class="mb-2.5">Vi har en rekke kurs og sertifiseringer, <label class="font-bold cursor-pointer hover:underline hover:underline-offset-2">se full liste her</label></p>
                 <p>Eller bruk søkefeltet under</p>
                 <div class="relative">
                     <input type="text" class="pl-16 w-full py-4 px-8 text-center rounded-sm my-12 text-center border text-black font-extralight text-2xl placeholder:text-black placeholder:font-extralight placeholder:text-2xl" placeholder="Søk i kurs og sertifisering">
