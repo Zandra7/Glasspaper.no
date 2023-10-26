@@ -8,10 +8,10 @@
             </div>
             <img src="~/public/images/logo.svg" alt="Glasspaper logo" class="w-64">
             <div class="pb-3 flex flex-row gap-12 justify-end">
-                <p>Tjenester</p>
-                <p>Om oss</p>
-                <p>Kontakt oss</p>
-                <p>Ledige stillinger</p>
+                <p class="cursor-pointer">Tjenester</p>
+                <p class="cursor-pointer">Om oss</p>
+                <p class="cursor-pointer">Kontakt oss</p>
+                <p class="cursor-pointer">Ledige stillinger</p>
             </div>
         </div>
     </nav>
