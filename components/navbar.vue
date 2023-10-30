@@ -27,5 +27,10 @@
     }
     .content {
         max-width: 1170px;
+        
+        @media screen and (max-width: 1175px) {
+            padding: 0 2rem;
+            
+        }
     }
 </style>
