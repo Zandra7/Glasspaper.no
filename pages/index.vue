@@ -1,6 +1,7 @@
 <template>
     <div>
         <SearchCard />
+        <services />
     </div>
 </template>
 
