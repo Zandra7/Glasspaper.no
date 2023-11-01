@@ -8,6 +8,8 @@
 
 </script>
 
-<style scoped>
-
+<style>
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
 </style>
