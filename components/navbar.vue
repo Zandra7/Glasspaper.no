@@ -7,10 +7,10 @@
                 <p>NO</p>
             </div>
             <div class="logo-burger">
-                <div><img src="~/public/images/logo.svg" alt="Glasspaper logo" class="gp-logo"></div>
-                <div><svg viewBox="0 0 20 20" fill="currentColor" class="hamburger"><path fill-rule="evenodd" d="M4 5a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zm0 6a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zm1 5a1 1 0 100 2h10a1 1 0 100-2H5z" clip-rule="evenodd"></path></svg></div>
+                <img src="~/public/images/logo.svg" alt="Glasspaper logo" class="gp-logo">
+                <svg @click="isOpen = !isOpen" viewBox="0 0 20 20" fill="currentColor" class="hamburger"><path fill-rule="evenodd" d="M4 5a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zm0 6a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zm1 5a1 1 0 100 2h10a1 1 0 100-2H5z" clip-rule="evenodd"></path></svg>
             </div>
-            <div class="nav-items">
+            <div class="nav-items" :class="{'nav-items-vertical': isOpen}">
                 <p class="nav-item">Tjenester</p>
                 <p class="nav-item">Om oss</p>
                 <p class="nav-item">Kontakt oss</p>
@@ -21,7 +21,8 @@
 </template>
 
 <script setup>
-
+    import { ref } from 'vue'
+    const isOpen = ref(false)
 </script>
 
 <style scoped>
@@ -66,6 +67,10 @@
             flex-direction: row;
     }
 
+    .hamburger {
+        display: none;
+    }
+
     @media (max-width: 1175px) {
         .content {
             padding: 0 2rem;
@@ -79,13 +84,16 @@
         .lang {
             display: none;
         }
+
         .nav-items {
+            display: none;
+        }
+
+        .nav-items-vertical {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: start;
-            text-decoration: overline;
-            text-decoration-color: rgb(72, 87, 90);
             position: fixed;
             top: 3.5rem;
             right: 0;
@@ -93,6 +101,7 @@
             background-color: rgba(88, 110, 114, 1);
         }
         .hamburger {
+            display: block;
             width: 1.5rem;
             padding: 1.25rem 0;
         }
