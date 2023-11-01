@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar text-white">
+    <nav class="navbar">
         <div class="content">
             <div class="lang">
                 <p>EN</p>
@@ -24,6 +24,7 @@
 <style scoped>
     .navbar {
         background-color: rgba(88, 110, 114, 1);
+        color: white;
     }
     .content {
         display: flex;
