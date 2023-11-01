@@ -8,10 +8,10 @@
             </div>
             <img src="~/public/images/logo.svg" alt="Glasspaper logo" class="w-64">
             <div class="pb-3 flex flex-row gap-12 justify-end">
-                <p class="cursor-pointer">Tjenester</p>
-                <p class="cursor-pointer">Om oss</p>
-                <p class="cursor-pointer">Kontakt oss</p>
-                <p class="cursor-pointer">Ledige stillinger</p>
+                <p class="cursor-pointer hover:underline hover:decoration-orange-500 hover:underline-offset-4">Tjenester</p>
+                <p class="cursor-pointer hover:underline hover:decoration-orange-500 hover:underline-offset-4">Om oss</p>
+                <p class="cursor-pointer hover:underline hover:decoration-orange-500 hover:underline-offset-4">Kontakt oss</p>
+                <p class="cursor-pointer hover:underline hover:decoration-orange-500 hover:underline-offset-4">Ledige stillinger</p>
             </div>
         </div>
     </nav>
@@ -30,7 +30,6 @@
         
         @media screen and (max-width: 1175px) {
             padding: 0 2rem;
-            
         }
     }
 </style>
