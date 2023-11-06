@@ -71,6 +71,7 @@
     .nav-item {
         cursor: pointer;
     }
+
     .nav-item:hover {
         text-decoration: underline;
         text-underline-offset: 4px;
@@ -113,9 +114,18 @@
             position: fixed;
             top: 3.5rem;
             right: 0;
+            gap: 1.75rem;
             height: 100%;
             background-color: rgba(88, 110, 114, 1);
             z-index: 10000;
+        }
+
+        .nav-item {
+            border-top: rgb(68, 84, 86) solid 1px;
+            width: 100%;
+            text-align: center;
+            padding-top: 1rem;
+
         }
 
         .hamburger {
