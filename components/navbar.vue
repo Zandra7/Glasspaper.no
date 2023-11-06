@@ -11,10 +11,15 @@
                 <svg @click="isOpen = !isOpen" viewBox="0 0 20 20" fill="currentColor" class="hamburger"><path fill-rule="evenodd" d="M4 5a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zm0 6a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zm1 5a1 1 0 100 2h10a1 1 0 100-2H5z" clip-rule="evenodd"></path></svg>
             </div>
             <div class="nav-items" :class="{'nav-items-vertical': isOpen}">
-                <p class="nav-item">Tjenester</p>
-                <p class="nav-item">Om oss</p>
-                <p class="nav-item">Kontakt oss</p>
-                <p class="nav-item">Ledige stillinger</p>
+                    <p class="nav-item">Tjenester</p>
+                    <p class="nav-item">Om oss</p>
+                    <p class="nav-item">Kontakt oss</p>
+                    <p class="nav-item">Ledige stillinger</p>
+                <div class="vertical-lang" :class="{'lang-vertical': isOpen}">
+                    <p class="lang-option">EN</p>
+                    <p>|</p>
+                    <p class="lang-option">NO</p>
+                </div>    
             </div>
         </div>
     </nav>
@@ -60,6 +65,7 @@
     }
     .gp-logo {
         width: 16rem;
+        cursor: pointer;
     }
     .nav-items {
         display: flex;
@@ -68,11 +74,9 @@
         gap: 3rem;
         padding-bottom: 1rem;
     }
-    .nav-item {
-        cursor: pointer;
-    }
 
-    .nav-item:hover {
+    .nav-item:hover, .lang-option:hover {
+        cursor: pointer;
         text-decoration: underline;
         text-underline-offset: 4px;
         text-decoration-color: #c44111;
@@ -85,6 +89,11 @@
     }
 
     .hamburger {
+        display: none;
+        cursor: pointer;
+    }
+
+    .vertical-lang {
         display: none;
     }
 
@@ -105,7 +114,19 @@
         .nav-items {
             display: none;
         }
+        .lang-vertical {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            bottom: 0;
+            gap: 1rem;
+            text-align: center;
 
+            z-index: 10001;
+            margin-bottom: 1rem;
+        }
         .nav-items-vertical {
             display: flex;
             flex-direction: column;
