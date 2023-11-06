@@ -54,7 +54,7 @@
     .lang {
         display: flex;
         flex-direction: row;
-        justify-content: end;
+        justify-content: flex-end;
         gap: 0.5rem;
         padding-top: 1rem;
     }
@@ -64,7 +64,7 @@
     .nav-items {
         display: flex;
         flex-direction: row;
-        justify-content: end;
+        justify-content: flex-end;
         gap: 3rem;
         padding-bottom: 1rem;
     }
@@ -110,7 +110,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: start;
+            justify-content: flex-start;
             position: fixed;
             top: 3.5rem;
             right: 0;
@@ -118,6 +118,7 @@
             height: 100%;
             background-color: rgba(88, 110, 114, 1);
             z-index: 10000;
+
         }
 
         .nav-item {
