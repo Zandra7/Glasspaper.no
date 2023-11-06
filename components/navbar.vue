@@ -99,6 +99,7 @@
             right: 0;
             height: 100%;
             background-color: rgba(88, 110, 114, 1);
+            z-index: 10000;
         }
         .hamburger {
             display: block;
