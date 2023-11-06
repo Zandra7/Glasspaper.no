@@ -40,10 +40,10 @@
 <style scoped>
     h2 {
         display: flex;
-        padding: 1.5rem 0;
-        font-size: 32px;
+        font-size: 2rem;
         max-width: 1170px;
-        margin: 0 auto;
+        font-weight: 400;
+        margin: 1rem auto;
     }
     .container {
         display: flex;
@@ -72,11 +72,13 @@
 
     h4 {
         font-size: 18px;
+        font-weight: 400;
+        margin: 0;
     }
 
     p {
         font-size: 16px;
-        font-weight: lighter;
+        font-weight: 300;
     }
     @media (max-width: 1175px) {
         .container, h2 {

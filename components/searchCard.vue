@@ -4,9 +4,11 @@
             <h1>Kurs og sertifisering</h1>
             <p class="kurs-sertif-text">Vi har en rekke kurs og sertifiseringer, <label class="text-link">se full liste her</label></p>
             <p>Eller bruk søkefeltet under</p>
-            <div class="relative">
-                <input type="text" placeholder="Søk i kurs og sertifisering">
-                <img src="~/public/images/searchIcon.png" alt="Search Icon" class="search-icon">
+            <div>
+                <label class="relative">
+                    <input type="text" placeholder="Søk i kurs og sertifisering">
+                    <img src="~/public/images/searchIcon.png" alt="Search Icon" class="search-icon">
+                </label>
             </div>
         </div>
     </div>
@@ -19,26 +21,23 @@
     .kurs-sertif-bg {
         display: flex;
         flex-direction: column;
-        margin: 9.69rem auto 2rem auto;
+        margin: 13.69rem auto 2rem auto;
         max-width: 1170px;
-        height: 240px;
         background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('~/public/images/img1.png');
         background-size: cover;
     }
-
     .kurs-sertif-content {
         color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100%;
         padding: 0 8rem;
     }
 
     h1 {
-        font-size: 36px;
-        padding-top: 1.25rem;
-        padding-bottom: 0.75rem;
+        font-weight: 500;
+        font-size: 2.25rem;
+        padding-top: 2.63rem;
     }
 
     .kurs-sertif-text {
@@ -55,12 +54,12 @@
     }
 
     input {
-        padding: 0.75rem 2.5rem;
-        margin: 1.5rem 0;
+        margin: 1.5rem 0 3rem 0;
         width: 100%;
-        height: 3rem;
+        height: 2.5rem;
         color: black;
-        border-radius: 0.25rem;
+        border-radius: 0.125rem;
+        background: white;
         font-size: 1rem;
         font-weight: 300;
         text-align: center;
@@ -72,13 +71,17 @@
         font-size: 1.125rem;
     }
 
+    .relative {
+        position: relative;
+    }
+    
     .search-icon {
-        position: absolute;
-        right: 1rem;
-        top: 50%;
         cursor: pointer;
         transform: translateY(-50%);
         width: 1.25rem;
+        position: absolute;
+        top: 50%;
+        right: 1.5rem;
     }
 
     @media (max-width: 640px) {
@@ -110,11 +113,6 @@
     @media (min-width: 1024px) {
         h1 {
             padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-
-        .kurs-sertif-text {
-            margin-bottom: 0.5rem;
         }
     }
 </style>
