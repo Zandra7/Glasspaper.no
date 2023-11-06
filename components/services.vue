@@ -42,5 +42,24 @@
     .container {
       gap:  2.33%;
     }
+    .container {
+      gap:  3.33%;
+    }
+     .pic1 {
+    flex: 1;
+    max-width: 37.32%;
+    height: auto;
   }
+  
+  .pic2 {
+    max-width: 25.35%;
+    height: auto;
+  }
+  
+  .pic3 {
+    max-width: 25.35%;
+    height: auto;
+  }
+  }
+  
   </style>
