@@ -19,7 +19,7 @@
     .kurs-sertif-bg {
         display: flex;
         flex-direction: column;
-        margin: 2rem auto;
+        margin: 9.69rem auto 2rem auto;
         max-width: 1170px;
         height: 240px;
         background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('~/public/images/img1.png');
@@ -98,6 +98,12 @@
 
         .kurs-sertif-text {
             margin-bottom: 1rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .kurs-sertif-bg {
+            margin: 5.69rem auto 2rem auto;
         }
     }
 

@@ -49,6 +49,10 @@
     .navbar {
         background-color: rgba(88, 110, 114, 1);
         color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
     }
     .content {
         display: flex;
@@ -117,10 +121,6 @@
         .nav-items {
             display: none;
         }
-        .nav-items > p:nth-child(4) {
-            border-bottom: rgb(68, 84, 86) solid 1px;
-            padding-bottom: 1.75rem;
-        }
 
         .lang-vertical {
             display: flex;
@@ -148,7 +148,7 @@
             height: 100%;
             background-color: rgba(88, 110, 114, 1);
             z-index: 1;
-
+            overflow: auto;
         }
 
         .nav-item {
