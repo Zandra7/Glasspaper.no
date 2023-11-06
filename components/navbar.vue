@@ -2,9 +2,9 @@
     <nav class="navbar" ref ="navbar">
         <div class="content">
             <div class="lang">
-                <p>EN</p>
-                <p>|</p>
-                <p>NO</p>
+                <p class="lang-option">EN</p>
+                <p class="lang-separator">|</p>
+                <p class="lang-option">NO</p>
             </div>
             <div class="logo-burger">
                 <img src="~/public/images/logo.svg" alt="Glasspaper logo" class="gp-logo">
@@ -14,10 +14,10 @@
                     <p class="nav-item">Tjenester</p>
                     <p class="nav-item">Om oss</p>
                     <p class="nav-item">Kontakt oss</p>
-                    <p class="nav-item">Ledige stillinger</p>
+                    <p class="nav-item">Ledige stillinger</p> <!-- how can I select this element with css without creating a new class? -->
                 <div class="vertical-lang" :class="{'lang-vertical': isOpen}">
                     <p class="lang-option">EN</p>
-                    <p>|</p>
+                    <p class="lang-separator">|</p>
                     <p class="lang-option">NO</p>
                 </div>    
             </div>
@@ -81,6 +81,9 @@
         text-underline-offset: 4px;
         text-decoration-color: #c44111;
     }
+    .lang-separator {
+        cursor: default;
+    }
 
     .logo-burger {
             display: flex;
@@ -114,6 +117,11 @@
         .nav-items {
             display: none;
         }
+        .nav-items > p:nth-child(4) {
+            border-bottom: rgb(68, 84, 86) solid 1px;
+            padding-bottom: 1.75rem;
+        }
+
         .lang-vertical {
             display: flex;
             flex-direction: row;
@@ -123,9 +131,10 @@
             bottom: 0;
             gap: 1rem;
             text-align: center;
-
-            z-index: 10001;
+            z-index: 2;
             margin-bottom: 1rem;
+            border-top: rgb(68, 84, 86) solid 1px;
+            padding-top: 1rem;
         }
         .nav-items-vertical {
             display: flex;
@@ -138,7 +147,7 @@
             gap: 1.75rem;
             height: 100%;
             background-color: rgba(88, 110, 114, 1);
-            z-index: 10000;
+            z-index: 1;
 
         }
 
@@ -147,7 +156,6 @@
             width: 100%;
             text-align: center;
             padding-top: 1rem;
-
         }
 
         .hamburger {
