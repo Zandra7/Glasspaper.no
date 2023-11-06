@@ -65,7 +65,6 @@
         flex-direction: row;
         justify-content: flex-end;
         gap: 0.5rem;
-        padding-top: 1rem;
     }
     .gp-logo {
         width: 16rem;
@@ -76,7 +75,6 @@
         flex-direction: row;
         justify-content: flex-end;
         gap: 3rem;
-        padding-bottom: 1rem;
     }
 
     .nav-item:hover, .lang-option:hover {
