@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar">
+    <nav class="navbar" ref ="navbar">
         <div class="content">
             <div class="lang">
                 <p>EN</p>
@@ -21,8 +21,23 @@
 </template>
 
 <script setup>
-    import { ref } from 'vue'
+    import { ref, onMounted, onUnmounted } from 'vue'
+
+    const navbar = ref(null)
     const isOpen = ref(false)
+
+    const handleClickOutside = event => {
+        if (navbar.value && !navbar.value.contains(event.target)) {
+            isOpen.value = false
+        }
+    }
+
+    onMounted(() => {
+        document.addEventListener('click', handleClickOutside)
+    })
+    onUnmounted(() => {
+        document.removeEventListener('click', handleClickOutside)
+    })
 </script>
 
 <style scoped>
@@ -102,6 +117,7 @@
             background-color: rgba(88, 110, 114, 1);
             z-index: 10000;
         }
+
         .hamburger {
             display: inline-block;
             width: 1.5rem;
