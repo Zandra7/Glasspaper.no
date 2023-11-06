@@ -37,8 +37,9 @@
     max-width: 27.35%;
     height: auto;
   }
+
   
-  @media (max-width: 1170px) {
+  @media (max-width: 1000px) {
     .container {
       gap:  2.33%;
     }
@@ -49,17 +50,28 @@
     flex: 1;
     max-width: 37.32%;
     height: auto;
+    grid-area: a;
   }
   
   .pic2 {
     max-width: 25.35%;
     height: auto;
+    grid-area: b;
   }
   
   .pic3 {
     max-width: 25.35%;
     height: auto;
+    grid-area: c;
   }
+
+  .boxes{
+    grid-template-areas: 
+    "a a"
+    "b c";
+  }
+
   }
   
+
   </style>
