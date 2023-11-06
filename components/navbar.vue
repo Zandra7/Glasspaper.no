@@ -49,6 +49,10 @@
     .navbar {
         background-color: rgba(88, 110, 114, 1);
         color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
     }
     .content {
         display: flex;
@@ -144,7 +148,7 @@
             height: 100%;
             background-color: rgba(88, 110, 114, 1);
             z-index: 1;
-
+            overflow: auto;
         }
 
         .nav-item {
