@@ -1,7 +1,7 @@
 <template>
     <div>
       <div class="container">
-        <img src="~/public/images/Picture1.png" class="pic2">
+        <img src="~/public/images/Picture1.png" class="pic1">
         <img src="~/public/images/Picture2.png" class="pic2">
         <img src="~/public/images/Picture3.png" class="pic3">
       </div>
@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     margin: auto;
-    gap: 39px; 
+    gap:  3.33%; 
     margin-top: 20px;
     max-width: 1170px; 
     width: 100%;
@@ -40,8 +40,7 @@
   
   @media (max-width: 1170px) {
     .container {
-      gap: 10px;
-      margin-top: 10px;
+      gap:  2.33%;
     }
   }
   </style>
