@@ -84,7 +84,7 @@
         }
     }
 
-    @media (max-width: 970px) {
+    @media (max-width: 1050px) {
         h2 {
             font-size: 26px;
             padding-bottom: 1.5rem;
