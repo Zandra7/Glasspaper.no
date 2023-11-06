@@ -1,4 +1,5 @@
 <template>
+    <h2>Aktuelle Saker</h2>
     <div class="container">
         <div class="news-container"> 
             <div>
@@ -37,6 +38,13 @@
 </script>
 
 <style scoped>
+    h2 {
+        display: flex;
+        padding: 1.5rem 0;
+        font-size: 32px;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
     .container {
         display: flex;
         flex-direction: row;
@@ -69,5 +77,62 @@
     p {
         font-size: 16px;
         font-weight: lighter;
+    }
+    @media (max-width: 1175px) {
+        .container, h2 {
+            padding: 0 2rem;
+        }
+    }
+
+    @media (max-width: 970px) {
+        h2 {
+            font-size: 26px;
+            padding-bottom: 1.5rem;
+        }
+
+        .container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .news-container {
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            padding-bottom: 1rem;
+        }
+
+        img {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            min-width: 200px;
+        }
+
+        h4, p{
+            padding-left: 0.5rem;
+        }
+
+        @media (max-width: 620px) {
+            h2 {
+                font-size: 22px;
+            }
+
+            h4, p {
+                padding-left: 0;
+            }
+            .container {
+                flex-direction: column;
+            }
+
+            .news-container {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            p {
+                display: none;
+            }
+        }
     }
 </style>
