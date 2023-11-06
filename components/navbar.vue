@@ -117,10 +117,6 @@
         .nav-items {
             display: none;
         }
-        .nav-items > p:nth-child(4) {
-            border-bottom: rgb(68, 84, 86) solid 1px;
-            padding-bottom: 1.75rem;
-        }
 
         .lang-vertical {
             display: flex;
