@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <img src="~/public/images/Picture1.png" class="pc1">
+      <img src="~/public/images/Picture1.png" class="pic1">
       <img src="~/public/images/Picture2.png" class="pic2">
       <img src="~/public/images/Picture3.png" class="pic3">
     </div>
@@ -39,7 +39,6 @@
 
 @media (max-width: 1170px) {
     .container {
-  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   margin: auto;
