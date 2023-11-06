@@ -65,6 +65,7 @@
     .logo-burger {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
     }
 
     .hamburger {
@@ -102,7 +103,7 @@
             z-index: 10000;
         }
         .hamburger {
-            display: block;
+            display: inline-block;
             width: 1.5rem;
             padding: 1.25rem 0;
         }
