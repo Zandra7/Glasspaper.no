@@ -39,7 +39,7 @@
   }
 
   
-  @media (max-width: 1000px) {
+  @media (max-width: 1170px) {
     .container {
       gap:  2.33%;
     }
@@ -48,6 +48,30 @@
     }
      .pic1 {
     flex: 1;
+    max-width: 37.32%;
+    height: auto;
+  }
+  
+  .pic2 {
+    max-width: 25.35%;
+    height: auto;
+  }
+  
+  .pic3 {
+    max-width: 25.35%;
+    height: auto;
+  }
+  }
+  
+  @media (max-width: 1000px) {
+    .container {
+      display: grid;
+      gap:  2.33%;
+      grid-template-areas: 
+      "a a"
+      "b c";
+    }
+     .pic1 {
     max-width: 37.32%;
     height: auto;
     grid-area: a;
@@ -64,14 +88,7 @@
     height: auto;
     grid-area: c;
   }
-
-  .boxes{
-    grid-template-areas: 
-    "a a"
-    "b c";
   }
 
-  }
-  
 
   </style>
