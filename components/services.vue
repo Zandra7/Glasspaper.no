@@ -63,7 +63,7 @@
   }
   }
   
-  @media (max-width: 1000px) {
+  @media (max-width: 750px) {
     .container {
       display: grid;
       gap:  2.33%;
@@ -72,19 +72,23 @@
       "b c";
     }
      .pic1 {
-    max-width: 37.32%;
+    max-width: 100%;
+    left: 10px;
     height: auto;
     grid-area: a;
+    margin-left: auto;
+      margin-right: auto;
+      width: 100%;
   }
   
   .pic2 {
-    max-width: 25.35%;
+    max-width: 100%;
     height: auto;
     grid-area: b;
   }
   
   .pic3 {
-    max-width: 25.35%;
+    max-width: 100%;
     height: auto;
     grid-area: c;
   }
