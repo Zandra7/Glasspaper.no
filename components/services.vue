@@ -70,6 +70,7 @@
       grid-template-areas: 
       "a a"
       "b c";
+      max-width: 700px;
     }
      .pic1 {
     max-width: 100%;
