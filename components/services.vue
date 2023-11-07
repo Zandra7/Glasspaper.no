@@ -29,7 +29,7 @@
   }
   
   .pic2 {
-    max-width: 25.35%;
+    max-width: 27.35%;
     height: auto;
   }
   
