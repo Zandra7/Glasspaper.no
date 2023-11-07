@@ -2,6 +2,7 @@
     <div>
         <Navbar />
         <SearchCard />
+        <services />
         <NewsItem />
     </div>
 </template>
