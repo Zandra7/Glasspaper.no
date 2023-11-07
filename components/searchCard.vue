@@ -21,10 +21,10 @@
     .kurs-sertif-bg {
         display: flex;
         flex-direction: column;
-        margin: 13.69rem auto 2rem auto;
+        margin: 12.25rem auto 3.25rem auto;
         max-width: 1170px;
         background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('~/public/images/img1.png');
-        background-size: cover;
+        background-size: cover;    
     }
     .kurs-sertif-content {
         color: white;
