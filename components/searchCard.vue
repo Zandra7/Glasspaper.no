@@ -1,12 +1,12 @@
 <template>
-    <div class="kurs-sertif-bg flex flex-col mx-auto mt-8 sm:mt-10 lg:mt-12">
-        <div class="kurs-sertif-content px-4 sm:px-8 md:px-16 lg:px-32 text-white">
-            <h1 class="text-3xl sm:text-4xl pt-5 sm:pt-8 lg:pt-10 pb-3 sm:pb-4 lg:pb-7">Kurs og sertifisering</h1>
-            <p class="mb-1 sm:mb-1.5 lg:mb-2.5">Vi har en rekke kurs og sertifiseringer, <label class="font-bold cursor-pointer hover:underline hover:underline-offset-2">se full liste her</label></p>
+    <div class="kurs-sertif-bg">
+        <div class="kurs-sertif-content">
+            <h1>Kurs og sertifisering</h1>
+            <p class="kurs-sertif-text">Vi har en rekke kurs og sertifiseringer, <label class="text-link">se full liste her</label></p>
             <p>Eller bruk søkefeltet under</p>
             <div class="relative">
-                <input type="text" class="pl-10 sm:pl-12 lg:pl-16 w-full py-3 sm:py-4 px-6 sm:px-7 lg:px-8 text-center rounded-sm my-6 sm:my-8 lg:my-12 text-center border text-black font-extralight text-xl sm:text-2xl placeholder:text-black placeholder:font-extralight placeholder:text-xl sm:placeholder:text-2xl" placeholder="Søk i kurs og sertifisering">
-                <img src="~/public/images/searchIcon.png" alt="Search Icon" class="absolute right-3 sm:right-4 lg:right-5 top-1/2 transform -translate-y-1/2 w-5 sm:w-6 h-5 sm:h-6 cursor-pointer">
+                <input type="text" placeholder="Søk i kurs og sertifisering">
+                <img src="~/public/images/searchIcon.png" alt="Search Icon" class="search-icon">
             </div>
         </div>
     </div>
@@ -17,18 +17,104 @@
 
 <style scoped>
     .kurs-sertif-bg {
+        display: flex;
+        flex-direction: column;
+        margin: 9.69rem auto 2rem auto;
         max-width: 1170px;
         height: 240px;
         background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('~/public/images/img1.png');
         background-size: cover;
+    }
 
-        /* Responsive Height */
-        @media (min-width: 640px) { /* sm: */
-            height: 280px;
+    .kurs-sertif-content {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding: 0 8rem;
+    }
+
+    h1 {
+        font-size: 36px;
+        padding-top: 1.25rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .kurs-sertif-text {
+        margin-bottom: 0.25rem;
+    }
+
+    .text-link {
+        font-weight: bold; 
+        cursor: pointer;
+    }
+    .text-link:hover {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+
+    input {
+        padding: 0.75rem 2.5rem;
+        margin: 1.5rem 0;
+        width: 100%;
+        height: 3rem;
+        color: black;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: center;
+        font-weight: 200;
+    }
+    ::placeholder {
+        color: black;
+        font-weight: 200;
+        font-size: 1.125rem;
+    }
+
+    .search-icon {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        cursor: pointer;
+        transform: translateY(-50%);
+        width: 1.25rem;
+    }
+
+    @media (max-width: 640px) {
+        .kurs-sertif-bg {
+            padding: 0 2rem;
         }
 
-        @media (min-width: 1024px) { /* lg: */
-            height: 320px;
+        h1 {
+            font-size: 24px;
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .kurs-sertif-content {
+            padding: 0;
+        }
+
+        .kurs-sertif-text {
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .kurs-sertif-bg {
+            margin: 5.69rem auto 2rem auto;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        h1 {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .kurs-sertif-text {
+            margin-bottom: 0.5rem;
         }
     }
 </style>
