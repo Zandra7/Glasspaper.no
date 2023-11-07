@@ -101,7 +101,7 @@
     }
    .pic1 {
       flex: 1;
-      max-width: 20rem;
+      max-width: 28.75rem;
       height: 20rem;
     }
   
