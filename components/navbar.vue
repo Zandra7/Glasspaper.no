@@ -146,7 +146,6 @@
             height: 100%;
             background-color: rgba(88, 110, 114, 1);
             z-index: 1;
-            overflow: auto;
         }
 
         .nav-item {
@@ -170,5 +169,38 @@
             padding: 1rem 0;
         }
     }
+    
+    @media (max-height: 550px) and (max-width: 768px) {
+            .nav-items-vertical {
+                gap: 0.25rem;
+            }
 
+            .nav-item {
+                margin-top: 0;
+            }
+
+            .lang-vertical {
+                padding-top: 0;
+                margin: 0;
+                font-size: 12px;
+            }
+        }
+
+        @media (max-height: 340px) and (max-width: 768px) {
+            .nav-items-vertical {
+                gap: 0;
+            }
+
+            .lang-vertical {
+                display: none;
+            }
+
+            .lang {
+                display: flex;
+                position: fixed;
+                top: -0;
+                right: 2.5rem;
+                font-size: 12px;
+            }
+        }
 </style>
