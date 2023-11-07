@@ -83,6 +83,12 @@
         text-underline-offset: 4px;
         text-decoration-color: #c44111;
     }
+
+    .lang-option:hover {
+        text-decoration: none;
+        color: #c44111;
+    }
+
     .lang-separator {
         cursor: default;
     }
