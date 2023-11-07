@@ -24,24 +24,23 @@
         <img src="~/public/images/Picture3.png" class="pic3"> -->
       </div>
     </div>
-  </template>
+</template>
   
   <script setup>
   </script>
   
-  <style scoped>
+<style scoped>
   .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: auto;
-    gap:  3.33%; 
     margin-top: 20px;
     max-width: 1170px; 
-    max-width: 100%;
+    width: 100%;
     color: white;
     border-bottom: rgb(204, 204, 204, 1) solid;
-    width: 1172px;
     padding-bottom: 83px;
+    gap: 2%;
   }
   
   .pic1 {
@@ -110,7 +109,7 @@
     }
   }
   
-  @media (max-width: 750px) {
+  @media (max-width: 768px) {
     .container {
       display: grid;
       gap:  2.33%;
@@ -146,5 +145,14 @@
   }
   }
 
+  @media (max-width: 425px) {
+    .container {
+      grid-template-areas: 
+      "a"
+      "b"
+      "c";
+    }
+  }
 
-  </style>
+
+</style>
