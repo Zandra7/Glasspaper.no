@@ -4,8 +4,8 @@
         <img src="~/public/images/Picture1.png" class="pic1">
         <img src="~/public/images/Picture2.png" class="pic2">
         <img src="~/public/images/Picture3.png" class="pic3">
+        </div>
       </div>
-    </div>
   </template>
   
   <script setup>
@@ -20,6 +20,9 @@
     margin-top: 20px;
     max-width: 1170px; 
     width: 100%;
+    border-bottom: rgb(204, 204, 204, 1) solid;
+    width: 1172px;
+    padding-bottom: 83px;
   }
   
   .pic1 {
@@ -38,6 +41,10 @@
     height: auto;
   }
 
+  .line{
+    border-bottom: rgb(204, 204, 204, 1) solid;
+    width: 1172px;
+  }
   
   @media (max-width: 1170px) {
     .container {
