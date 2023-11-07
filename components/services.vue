@@ -45,10 +45,9 @@
   }
   
   .pic1 {
+    display: flex;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('~/public/images/Picture1.png');
-    flex: 1;
     max-width: 28.75rem;
-    height: 20rem;
     background-size: cover;
   }
   .pic1:hover, .pic2:hover, .pic3:hover {
@@ -58,14 +57,13 @@
   .pic2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('~/public/images/Picture2.png');
     max-width: 20rem;
-    height: 20rem;
     background-size: cover;
+
   }
   
   .pic3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('~/public/images/Picture3.png');
     max-width: 20rem;
-    height: 20rem;
     background-size: cover;
   }
 
@@ -100,19 +98,15 @@
       gap:  3.33%;
     }
    .pic1 {
-      flex: 1;
       max-width: 28.75rem;
-      height: 20rem;
     }
   
     .pic2 {
       max-width: 20rem;
-      height: 20rem;
     }
 
     .pic3 {
       max-width: 20rem;
-      height: 20rem;
     }
   }
   
@@ -139,12 +133,16 @@
     max-width: 100%;
     height: auto;
     grid-area: b;
+    min-height: 100%;
+    height: auto;
   }
   
   .pic3 {
     max-width: 100%;
     height: auto;
     grid-area: c;
+    min-height: 100%;
+    height: auto;
   }
   }
 
