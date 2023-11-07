@@ -39,6 +39,7 @@
 
 <style scoped>
     h2 {
+        padding-top: 41.5px;
         display: flex;
         font-size: 2rem;
         max-width: 1170px;
