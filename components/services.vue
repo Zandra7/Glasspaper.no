@@ -37,7 +37,7 @@
     gap:  3.33%; 
     margin-top: 20px;
     max-width: 1170px; 
-    width: 100%;
+    max-width: 100%;
     color: white;
     border-bottom: rgb(204, 204, 204, 1) solid;
     width: 1172px;
@@ -47,31 +47,35 @@
   .pic1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('~/public/images/Picture1.png');
     flex: 1;
-    max-width: 39.32%;
-    height: auto;
+    max-width: 28.75rem;
+    height: 20rem;
     background-size: cover;
   }
-  
+  .pic1:hover, .pic2:hover, .pic3:hover {
+    box-shadow: 4px 2px 8px 2px rgba(0, 0, 0, 0.70);
+  }
+
   .pic2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('~/public/images/Picture2.png');
-    max-width: 27.35%;
-    height: auto;
+    max-width: 20rem;
+    height: 20rem;
     background-size: cover;
   }
   
   .pic3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('~/public/images/Picture3.png');
-    max-width: 27.35%;
-    height: auto;
+    max-width: 20rem;
+    height: 20rem;
     background-size: cover;
   }
 
   .content{
-    padding: 11.94rem 2.48rem 4.94rem 0.83rem;
+    padding: 9.94rem 2.48rem 4.94rem 0.83rem;
+    cursor: pointer;
   }
 
   .pic1 .content {
-    padding: 11.94rem 3.83rem 3.94rem 0.96rem;
+    padding: 10rem 3.83rem 3.94rem 0.96rem;
   }
 
   h3 {
@@ -93,26 +97,23 @@
   
   @media (max-width: 1170px) {
     .container {
-      gap:  2.33%;
-    }
-    .container {
       gap:  3.33%;
     }
-     .pic1 {
-    flex: 1;
-    max-width: 37.32%;
-    height: auto;
-  }
+   .pic1 {
+      flex: 1;
+      max-width: 20rem;
+      height: 20rem;
+    }
   
-  .pic2 {
-    max-width: 25.35%;
-    height: auto;
-  }
-  
-  .pic3 {
-    max-width: 25.35%;
-    height: auto;
-  }
+    .pic2 {
+      max-width: 20rem;
+      height: 20rem;
+    }
+
+    .pic3 {
+      max-width: 20rem;
+      height: 20rem;
+    }
   }
   
   @media (max-width: 750px) {
