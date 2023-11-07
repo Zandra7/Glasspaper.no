@@ -1,11 +1,29 @@
 <template>
     <div>
       <div class="container">
-        <img src="~/public/images/Picture1.png" class="pic1">
-        <img src="~/public/images/Picture2.png" class="pic2">
-        <img src="~/public/images/Picture3.png" class="pic3">
+        <div class="pic1"> 
+          <div class="content">
+            <h3>Bemanning og rekruttering</h3>
+            <p>Vi finner og kurser riktige kandidater for deg</p>
+          </div>
         </div>
+        <div class="pic2">
+          <div class="content">
+            <h3>Konsulenttjenester</h3>
+            <p>Enkeltkonsulenter eller hele prosjekter</p>
+          </div>
+        </div>
+        <div class="pic3">
+          <div class="content">
+            <h3>Programvare</h3>
+            <p>Programvare for nanolearning og compliance</p>
+          </div>
+        </div>
+        <!-- <img src="~/public/images/Picture1.png" class="pic1">
+        <img src="~/public/images/Picture2.png" class="pic2">
+        <img src="~/public/images/Picture3.png" class="pic3"> -->
       </div>
+    </div>
   </template>
   
   <script setup>
@@ -20,25 +38,52 @@
     margin-top: 20px;
     max-width: 1170px; 
     width: 100%;
+    color: white;
     border-bottom: rgb(204, 204, 204, 1) solid;
     width: 1172px;
     padding-bottom: 83px;
   }
   
   .pic1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('~/public/images/Picture1.png');
     flex: 1;
     max-width: 39.32%;
     height: auto;
+    background-size: cover;
   }
   
   .pic2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('~/public/images/Picture2.png');
     max-width: 27.35%;
     height: auto;
+    background-size: cover;
   }
   
   .pic3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('~/public/images/Picture3.png');
     max-width: 27.35%;
     height: auto;
+    background-size: cover;
+  }
+
+  .content{
+    padding: 11.94rem 2.48rem 4.94rem 0.83rem;
+  }
+
+  .pic1 .content {
+    padding: 11.94rem 3.83rem 3.94rem 0.96rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
   }
 
   .line{
