@@ -34,6 +34,7 @@
     display: flex;
     justify-content: space-between;
     margin: auto;
+    gap:  39px; 
     margin-top: 20px;
     max-width: 1170px; 
     width: 100%;
@@ -94,7 +95,7 @@
   
   @media (max-width: 1170px) {
     .container {
-      gap:  3.33%;
+      gap:  2.33%;
     }
    .pic1 {
       max-width: 28.75rem;
@@ -116,7 +117,7 @@
       grid-template-areas: 
       "a a"
       "b c";
-      max-width: 700px;
+
     }
      .pic1 {
     max-width: 100%;
