@@ -2,7 +2,7 @@
     <div class="kurs-sertif-bg">
         <div class="kurs-sertif-content">
             <h1>Kurs og sertifisering</h1>
-            <p class="kurs-sertif-text">Vi har en rekke kurs og sertifiseringer, <label class="text-link">se full liste her</label></p>
+            <p class="kurs-sertif-text">Vi har en rekke kurs og sertifiseringer, <a class="text-link">se full liste her</a></p>
             <p>Eller bruk søkefeltet under</p>
             <div>
                 <label class="relative">
@@ -21,10 +21,10 @@
     .kurs-sertif-bg {
         display: flex;
         flex-direction: column;
-        margin: 13.69rem auto 2rem auto;
+        margin: 12.25rem auto 3.25rem auto;
         max-width: 1170px;
         background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('~/public/images/img1.png');
-        background-size: cover;
+        background-size: cover;    
     }
     .kurs-sertif-content {
         color: white;
@@ -56,7 +56,7 @@
     input {
         margin: 1.5rem 0 3rem 0;
         width: 100%;
-        height: 2.5rem;
+        height: 3rem;
         color: black;
         border-radius: 0.125rem;
         background: white;
@@ -64,6 +64,7 @@
         font-weight: 300;
         text-align: center;
         font-weight: 200;
+        border: none;
     }
     ::placeholder {
         color: black;
@@ -82,6 +83,12 @@
         position: absolute;
         top: 50%;
         right: 1.5rem;
+    }
+
+    @media (max-width: 380px) {
+        .search-icon {
+            display: none;
+        }
     }
 
     @media (max-width: 640px) {

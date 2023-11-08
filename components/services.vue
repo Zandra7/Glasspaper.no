@@ -1,43 +1,91 @@
 <template>
     <div>
       <div class="container">
-        <img src="~/public/images/Picture1.png" class="pic1">
-        <img src="~/public/images/Picture2.png" class="pic2">
-        <img src="~/public/images/Picture3.png" class="pic3">
+        <div class="pic1"> 
+          <div class="content">
+            <h3>Bemanning og rekruttering</h3>
+            <p>Vi finner og kurser riktige kandidater for deg</p>
+          </div>
         </div>
+        <div class="pic2">
+          <div class="content">
+            <h3>Konsulenttjenester</h3>
+            <p>Enkeltkonsulenter eller hele prosjekter</p>
+          </div>
+        </div>
+        <div class="pic3">
+          <div class="content">
+            <h3>Programvare</h3>
+            <p>Programvare for nanolearning og compliance</p>
+          </div>
+        </div>
+        <!-- <img src="~/public/images/Picture1.png" class="pic1">
+        <img src="~/public/images/Picture2.png" class="pic2">
+        <img src="~/public/images/Picture3.png" class="pic3"> -->
       </div>
-  </template>
+    </div>
+</template>
   
   <script setup>
   </script>
   
-  <style scoped>
+<style scoped>
   .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: auto;
     gap:  39px; 
     margin-top: 20px;
     max-width: 1170px; 
     width: 100%;
+    color: white;
     border-bottom: rgb(204, 204, 204, 1) solid;
     padding-bottom: 83px;
+    gap: 2%;
   }
   
   .pic1 {
-    flex: 1;
-    max-width: 39.32%;
-    height: auto;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('~/public/images/Picture1.png');
+    max-width: 28.75rem;
+    background-size: cover;
   }
-  
+  .pic1:hover, .pic2:hover, .pic3:hover {
+    box-shadow: 4px 2px 8px 2px rgba(0, 0, 0, 0.70);
+  }
+
   .pic2 {
-    max-width: 27.35%;
-    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('~/public/images/Picture2.png');
+    max-width: 20rem;
+    background-size: cover;
+
   }
   
   .pic3 {
-    max-width: 27.35%;
-    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('~/public/images/Picture3.png');
+    max-width: 20rem;
+    background-size: cover;
+  }
+
+  .content{
+    padding: 9.94rem 2.48rem 4.94rem 0.83rem;
+    cursor: pointer;
+  }
+
+  .pic1 .content {
+    padding: 10rem 3.83rem 3.94rem 0.96rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
   }
 
   .line{
@@ -48,26 +96,21 @@
   @media (max-width: 1170px) {
     .container {
       gap:  2.33%;
-
     }
-     .pic1 {
-    flex: 1;
-    max-width: 37.32%;
-    height: auto;
+   .pic1 {
+      max-width: 28.75rem;
+    }
+  
+    .pic2 {
+      max-width: 20rem;
+    }
+
+    .pic3 {
+      max-width: 20rem;
+    }
   }
   
-  .pic2 {
-    max-width: 25.35%;
-    height: auto;
-  }
-  
-  .pic3 {
-    max-width: 25.35%;
-    height: auto;
-  }
-  }
-  
-  @media (max-width: 750px) {
+  @media (max-width: 768px) {
     .container {
       display: grid;
       gap:  2.33%;
@@ -90,12 +133,27 @@
     max-width: 100%;
     height: auto;
     grid-area: b;
+    min-height: 100%;
+    height: auto;
   }
   
   .pic3 {
     max-width: 100%;
     height: auto;
     grid-area: c;
+    min-height: 100%;
+    height: auto;
   }
   }
-  </style>
+
+  @media (max-width: 425px) {
+    .container {
+      grid-template-areas: 
+      "a"
+      "b"
+      "c";
+    }
+  }
+
+
+</style>
