@@ -4,6 +4,7 @@
         <SearchCard />
         <services />
         <NewsItem />
+        <Footer />
     </div>
 </template>
 
