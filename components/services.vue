@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="containerFlex">
       <div class="container">
         <img src="~/public/images/Picture1.png" class="pic1">
         <img src="~/public/images/Picture2.png" class="pic2">
@@ -25,7 +25,6 @@
   }
   
   .pic1 {
-    flex: 1;
     max-width: 39.32%;
     height: auto;
   }
