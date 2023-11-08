@@ -136,12 +136,15 @@
   }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 660px) {
     .container {
       grid-template-areas: 
       "a"
       "b"
       "c";
+    }
+    .pic1 {
+      width: 320px;
     }
   }
 </style>
