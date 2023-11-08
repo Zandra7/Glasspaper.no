@@ -51,14 +51,14 @@
         color: white;
         position: fixed;
         top: 0;
-        width: 100%;
+        max-width: 100%;
         z-index: 1;
     }
     .content {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        max-width: 1170px;
+        max-width: 100%;
     }
     .lang {
         display: flex;
