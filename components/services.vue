@@ -30,56 +30,57 @@
 <style scoped>
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: auto;
-    gap:  39px; 
+    gap:  35px; 
     margin-top: 20px;
     max-width: 1170px; 
     width: 100%;
     color: white;
     padding-bottom: 83px;
-    gap: 2%;
   }
   
-  .pic1 {
-    display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('~/public/images/Picture1.png');
-    max-width: 28.75rem;
-    background-size: cover;
-  }
-  .pic1:hover, .pic2:hover, .pic3:hover {
+  /* .pic1:hover, .pic2:hover, .pic3:hover {
     box-shadow: 4px 2px 8px 2px rgba(0, 0, 0, 0.70);
+  } */
+
+  .pic1 {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.10) 43.23%, #000 100%), url('~/public/images/Picture1.png');
+    width: 460px;
   }
 
   .pic2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('~/public/images/Picture2.png');
-    max-width: 20rem;
-    background-size: cover;
-
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.10) 43.23%, #000 100%), url('~/public/images/Picture2.png');
+    width: 320px;
   }
   
   .pic3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('~/public/images/Picture3.png');
-    max-width: 20rem;
-    background-size: cover;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.10) 43.23%, #000 100%), url('~/public/images/Picture3.png');
+    width: 320px;
   }
 
-  .content{
-    padding: 9.94rem 2.48rem 4.94rem 0.83rem;
+  .pic1, .pic2, .pic3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 320px;
+  }
+
+  .content {
     cursor: pointer;
   }
 
-  .pic1 .content {
-    padding: 10rem 3.83rem 3.94rem 0.96rem;
-  }
-
   h3 {
+    padding: 191px 133.62px 17px 15.33px;
+    margin: 0;
     font-size: 1.5rem;
     font-weight: 500;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
   }
 
   p {
+    padding: 0 61.33px 0 15.33px;
+    margin: 0;
     font-size: 1.125rem;
     font-weight: 400;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
@@ -99,9 +100,6 @@
     .container {
       gap:  2.33%;
     }
-   .pic1 {
-      max-width: 28.75rem;
-    }
   
     .pic2 {
       max-width: 20rem;
@@ -112,39 +110,29 @@
     }
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 1153px) {
     .container {
-      display: grid;
+      display: grid;      
       gap:  2.33%;
       grid-template-areas: 
       "a a"
       "b c";
-
     }
-     .pic1 {
-    max-width: 100%;
-    left: 10px;
-    height: auto;
-    grid-area: a;
-    margin-left: auto;
-      margin-right: auto;
+    .pic1 {
+      grid-area: a;
+      margin: 0 auto;
       width: 100%;
+      background-position: bottom;
   }
   
   .pic2 {
     max-width: 100%;
-    height: auto;
     grid-area: b;
-    min-height: 100%;
-    height: auto;
   }
   
   .pic3 {
     max-width: 100%;
-    height: auto;
     grid-area: c;
-    min-height: 100%;
-    height: auto;
   }
   }
 
