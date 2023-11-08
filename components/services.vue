@@ -19,10 +19,8 @@
             <p>Programvare for nanolearning og compliance</p>
           </div>
         </div>
-        <!-- <img src="~/public/images/Picture1.png" class="pic1">
-        <img src="~/public/images/Picture2.png" class="pic2">
-        <img src="~/public/images/Picture3.png" class="pic3"> -->
       </div>
+      <hr>
     </div>
 </template>
   
@@ -39,7 +37,6 @@
     max-width: 1170px; 
     width: 100%;
     color: white;
-    border-bottom: rgb(204, 204, 204, 1) solid;
     padding-bottom: 83px;
     gap: 2%;
   }
@@ -87,12 +84,17 @@
     font-weight: 400;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
   }
-
-  .line{
-    border-bottom: rgb(204, 204, 204, 1) solid;
-    width: 1172px;
-  }
   
+  hr {
+    max-width: 1170px;
+  }
+
+  @media (max-width: 1175px) {
+    hr {
+      margin: 0 2rem;
+    }
+  }
+
   @media (max-width: 1170px) {
     .container {
       gap:  2.33%;
@@ -154,6 +156,4 @@
       "c";
     }
   }
-
-
 </style>
