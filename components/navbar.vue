@@ -134,24 +134,35 @@
             position: fixed;
             bottom: 0;
             gap: 1rem;
-            text-align: center;
+            text-align: left;
             z-index: 2;
             margin-bottom: 1rem;
             border-top: rgb(68, 84, 86) solid 1px;
             padding-top: 1rem;
         }
+
         .nav-items-vertical {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
             position: fixed;
+            overflow: auto;
             top: 3.5rem;
             right: 0;
-            gap: 1.75rem;
+            gap: 0;
             height: 100%;
+            width: 220px;
             background-color: rgba(88, 110, 114, 1);
             z-index: 1;
+            animation-name: burger-slide;
+            animation-duration: 0.5s;
+
+        }
+
+        @keyframes burger-slide {
+            from { right: -240.18px;}
+            to { right: 0;}
         }
 
         .nav-item {
@@ -159,6 +170,7 @@
             width: 100%;
             text-align: center;
             padding-top: 1rem;
+            margin-top: 0;
         }
 
         .hamburger {
