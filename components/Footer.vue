@@ -1,6 +1,6 @@
 <template>
     <div class="background">
-
+        hello
     </div>
 </template>
 
@@ -10,6 +10,6 @@
 
 <style scoped>
 .background{
-    background-color: rgba(67, 67, 67,)
+    background-color: rgb(67, 67, 67)
 }
 </style>
