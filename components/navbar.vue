@@ -14,7 +14,7 @@
                     <p class="nav-item">Tjenester</p>
                     <p class="nav-item">Om oss</p>
                     <p class="nav-item">Kontakt oss</p>
-                    <p class="nav-item">Ledige stillinger</p> <!-- how can I select this element with css without creating a new class? -->
+                    <p class="nav-item">Ledige stillinger</p>
                 <div class="vertical-lang" :class="{'lang-vertical': isOpen}">
                     <p class="lang-option">EN</p>
                     <p class="lang-separator">|</p>
@@ -83,6 +83,12 @@
         text-underline-offset: 4px;
         text-decoration-color: #c44111;
     }
+
+    .lang-option:hover {
+        text-decoration: none;
+        color: #c44111;
+    }
+
     .lang-separator {
         cursor: default;
     }
