@@ -28,6 +28,9 @@
     max-width: 39.32%;
     height: auto;
   }
+  .pic1text{
+    z-index: 2;
+  }
   
   .pic2 {
     max-width: 27.35%;
@@ -51,16 +54,19 @@
     flex: 1;
     max-width: 37.32%;
     height: auto;
+    z-index: 1
   }
   
   .pic2 {
     max-width: 25.35%;
     height: auto;
+    z-index: 1
   }
   
   .pic3 {
     max-width: 25.35%;
     height: auto;
+    z-index: 1
   }
   }
   
