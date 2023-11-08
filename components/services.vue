@@ -12,16 +12,15 @@
   </script>
   
   <style scoped>
-  .container {
+   .container {
     display: flex;
     justify-content: center;
     margin: auto;
-    gap:  3.33%; 
+    gap:  39px; 
     margin-top: 20px;
     max-width: 1170px; 
     width: 100%;
     border-bottom: rgb(204, 204, 204, 1) solid;
-    width: 1172px;
     padding-bottom: 83px;
   }
   
@@ -40,7 +39,6 @@
     max-width: 27.35%;
     height: auto;
   }
-
   .line{
     border-bottom: rgb(204, 204, 204, 1) solid;
     width: 1172px;
@@ -49,9 +47,6 @@
   @media (max-width: 1170px) {
     .container {
       gap:  2.33%;
-    }
-    .container {
-      gap:  3.33%;
     }
      .pic1 {
     flex: 1;
@@ -77,7 +72,6 @@
       grid-template-areas: 
       "a a"
       "b c";
-      max-width: 700px;
     }
      .pic1 {
     max-width: 100%;
@@ -102,5 +96,13 @@
   }
   }
 
+  @media (max-width: 425px) {
+    .container {
+      grid-template-areas:
+      "a"
+      "b"
+      "c";
+    }
+  }
 
   </style>
