@@ -21,7 +21,6 @@
     max-width: 1170px; 
     width: 100%;
     border-bottom: rgb(204, 204, 204, 1) solid;
-    width: 1172px;
     padding-bottom: 83px;
   }
   
