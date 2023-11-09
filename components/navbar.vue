@@ -11,14 +11,14 @@
                 <svg @click="isOpen = !isOpen" viewBox="0 0 20 20" fill="currentColor" class="hamburger"><path fill-rule="evenodd" d="M4 5a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zm0 6a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zm1 5a1 1 0 100 2h10a1 1 0 100-2H5z" clip-rule="evenodd"></path></svg>
             </div>
             <div class="nav-items" :class="{'nav-items-vertical': isOpen}">
-                    <p class="nav-item">Tjenester</p>
-                    <p class="nav-item">Om oss</p>
-                    <p class="nav-item">Kontakt oss</p>
-                    <p class="nav-item">Ledige stillinger</p> <!-- how can I select this element with css without creating a new class? -->
+                    <a class="nav-item">Tjenester</a>
+                    <a class="nav-item">Om oss</a>
+                    <a class="nav-item">Kontakt oss</a>
+                    <a class="nav-item">Ledige stillinger</a>
                 <div class="vertical-lang" :class="{'lang-vertical': isOpen}">
-                    <p class="lang-option">EN</p>
+                    <a class="lang-option">EN</a>
                     <p class="lang-separator">|</p>
-                    <p class="lang-option">NO</p>
+                    <a class="lang-option">NO</a>
                 </div>    
             </div>
         </div>
@@ -65,6 +65,7 @@
         flex-direction: row;
         justify-content: flex-end;
         gap: 0.5rem;
+        margin: 0;
     }
     .gp-logo {
         width: 16rem;
@@ -75,16 +76,32 @@
         flex-direction: row;
         justify-content: flex-end;
         gap: 3rem;
+        margin-bottom: 16px;
     }
 
+    a {
+        text-decoration: underline 1.5px rgba(196, 65, 17, 0);
+        transition: 300ms;
+        text-underline-offset: 4px;
+    }
     .nav-item:hover, .lang-option:hover {
         cursor: pointer;
-        text-decoration: underline;
-        text-underline-offset: 4px;
-        text-decoration-color: #c44111;
+        text-decoration-color: rgba(196, 65, 17, 1);
+    }
+
+    .lang-option:hover {
+        text-decoration: none;
+        color: #c44111;
+    }
+
+    .lang-option {
+        margin: 0;
+        margin-top: 16px;
     }
     .lang-separator {
         cursor: default;
+        margin: 0;
+        margin-top: 16px;
     }
 
     .logo-burger {
@@ -128,31 +145,45 @@
             position: fixed;
             bottom: 0;
             gap: 1rem;
-            text-align: center;
+            text-align: left;
             z-index: 2;
             margin-bottom: 1rem;
             border-top: rgb(68, 84, 86) solid 1px;
             padding-top: 1rem;
         }
+
         .nav-items-vertical {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
             position: fixed;
+            overflow: auto;
             top: 3.5rem;
             right: 0;
-            gap: 1.75rem;
+            gap: 0;
             height: 100%;
+            width: 220px;
             background-color: rgba(88, 110, 114, 1);
             z-index: 1;
+            animation-name: burger-slide;
+            animation-duration: 0.5s;
+        }
+
+        @keyframes burger-slide {
+            from { right: -240.18px;}
+            to { right: 0;}
+        }
+
+        .nav-items-vertical a {
+            padding: 10px 0 10px 0;
         }
 
         .nav-item {
             border-top: rgb(68, 84, 86) solid 1px;
             width: 100%;
             text-align: center;
-            padding-top: 1rem;
+            margin-top: 0;
         }
 
         .hamburger {
