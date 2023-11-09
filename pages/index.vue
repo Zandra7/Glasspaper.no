@@ -4,6 +4,7 @@
         <SearchCard />
         <services />
         <NewsItem />
+        <Footer />
     </div>
 </template>
 
@@ -13,6 +14,10 @@
 
 <style>
     * {
-        font-family: 'Roboto', sans-serif;
+        font-family: roboto;
+    }
+    @font-face {
+        font-family: roboto;
+        src: url(~/public/Fonts/Roboto-Regular.ttf);
     }
 </style>
