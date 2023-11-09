@@ -147,4 +147,13 @@
       width: 320px;
     }
   }
+
+  @media (max-width: 425px) {
+    .pic1, .pic2, .pic3 {
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 320px;
+    }
+  }
 </style>
