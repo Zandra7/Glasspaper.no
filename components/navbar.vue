@@ -81,7 +81,7 @@
 
     a {
         text-decoration: underline 1.5px rgba(196, 65, 17, 0);
-        transition: 300ms;
+        transition: 500ms;
         text-underline-offset: 4px;
     }
     .nav-item:hover, .lang-option:hover {
