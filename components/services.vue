@@ -41,10 +41,10 @@
     padding-bottom: 83px;
   }
   
-  /* .pic1:hover, .pic2:hover, .pic3:hover {
+  .pic1:hover, .pic2:hover, .pic3:hover {
     box-shadow: 4px 2px 8px 2px rgba(0, 0, 0, 0.70);
-  } */
-
+  }
+  
   .pic1 {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.10) 43.23%, #000 100%), url('~/public/images/Picture1.png');
     width: 460px;
@@ -145,6 +145,15 @@
     }
     .pic1 {
       width: 320px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .pic1, .pic2, .pic3 {
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 320px;
     }
   }
 </style>
