@@ -41,7 +41,7 @@
 
 .a, .d, .g{
     font-weight: 700;
-    padding-top: 35px
+    padding-top: 35px;
 }
 
 .b, .e, .h{
