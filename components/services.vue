@@ -41,10 +41,10 @@
     padding-bottom: 83px;
   }
   
-  /* .pic1:hover, .pic2:hover, .pic3:hover {
+  .pic1:hover, .pic2:hover, .pic3:hover {
     box-shadow: 4px 2px 8px 2px rgba(0, 0, 0, 0.70);
-  } */
-
+  }
+  
   .pic1 {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.10) 43.23%, #000 100%), url('~/public/images/Picture1.png');
     width: 460px;
