@@ -168,7 +168,6 @@
             z-index: 1;
             animation-name: burger-slide;
             animation-duration: 0.5s;
-
         }
 
         @keyframes burger-slide {
@@ -176,11 +175,14 @@
             to { right: 0;}
         }
 
+        .nav-items-vertical a {
+            padding: 10px 0 10px 0;
+        }
+
         .nav-item {
             border-top: rgb(68, 84, 86) solid 1px;
             width: 100%;
             text-align: center;
-            padding-top: 1rem;
             margin-top: 0;
         }
 
