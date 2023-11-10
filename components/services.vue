@@ -145,5 +145,8 @@
      width: 100%;
      height: 320px;
    }
+   h3, p {
+    padding-right: 10px;
+   }
  }
 </style>
