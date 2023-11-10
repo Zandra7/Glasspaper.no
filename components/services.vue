@@ -31,7 +31,6 @@
  .container {
    display: flex;
    justify-content: center;
-   flex-wrap: wrap;
    margin: auto;
    gap:  35px; 
    margin-top: 20px;
